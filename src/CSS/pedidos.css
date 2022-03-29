@@ -1,0 +1,118 @@
+h1{
+  width:80%;
+  margin:0 auto;
+  border-bottom:2px solid var(--colorPink1);
+}
+
+.formulario,.formElement,.inputText,.inputRatioCheck,.counter,.textAreaInput,.imgButtons{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  
+}
+
+.formulario{
+  row-gap: 2rem;
+
+  padding:2rem;
+}
+
+.formElement{
+  flex:1 1 50%;
+  gap:3rem;
+
+  padding:2rem;
+
+  border:2px solid black;
+}
+
+.formElement:first-child{
+  flex:1 1 100%; 
+}
+
+legend{
+  color:black;
+  letter-spacing: .7rem;
+}
+
+.inputText{
+  flex:1 0 auto;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+}
+
+.inputText label{
+  flex:0 1 20%;
+  text-align: right;
+}
+
+.inputText input:last-child{
+  flex:0 1 60%;
+  padding-left:2rem;
+}
+
+.inputRatioCheck{
+  flex:1 1 100%;
+  justify-content: space-evenly;
+  gap:.5rem;
+}
+
+p:first-child{
+  flex:1 1 100%;
+  color:black;
+  margin:.5rem 0;
+  border-bottom:2px dotted black;
+} 
+
+.details{
+  flex:1 0 40%;
+  /* border:2px solid black; */
+}
+
+.counter{
+  flex:1 1 auto;
+  column-gap: 2rem;
+  /* border:2px solid black; */
+}
+
+.textAreaInput{
+  flex:1 1 50%;
+  /* border:2px solid black; */
+}
+
+textarea{
+  flex-grow: 1;
+}
+
+.imgButtons{
+  flex:1 1 50%;
+}
+
+img{
+  width:150px;
+  height:150px;
+/*   border-radius: 50%; */
+}
+
+figcaption{
+  flex:1 1 100%;
+
+  display:flex;
+  justify-content: space-around;
+
+  margin-top: 1rem;
+  text-transform: uppercase;
+  
+}
+
+figcaption span{
+  font-family: 'Segoe ui';
+}
+
+.acceptDeclineButtons{
+  flex:1 1 100%;
+
+  padding:1rem;
+  text-align: center;
+}

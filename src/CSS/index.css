@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+*{
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+
+  font-size:1.6rem;  
+  font-family: "Lobster", monospace;
+  color:var(--colorLetterDark);
+
+  list-style: none;
+  text-decoration: none;
+
+}
+
+:root{
+  font-size:.625rem;
+  --colorAlpha: 1;
+  --colorPink: 345,66%;
+  --colorYellow: 27,100%;
+  --colorLetter: 225,86%;
+  --colorTitle: 189,89%,13%;
+  --submit: 150,80%;
+  --erase: 355,78%;
+
+  --colorPink1: hsla(var(--colorPink),40%,var(--colorAlpha));
+  --colorYellow1: hsla(var(--colorYellow),73%,var(--colorAlpha));
+  --colorLetterDark: hsla(var(--colorLetter),19%,var(--colorAlpha));
+  --colorLetterLight:hsla(var(--colorLetter),57%,var(--colorAlpha));
+  --colorTitles:hsla(var(--colorTitle),var(--colorAlpha));
+  --colorSubmit: hsla(var(--submit),35%,var(--colorAlpha));
+  --colorErase: hsla(var(--erase),50%,var(--colorAlpha));
+}
+
+.btn{
+  padding:.2rem 2.5rem;
+
+  font-family: 'Segoe UI';
+  font-size:1.6rem;
+  font-weight: bold;
+  line-height: 3.2rem;
+
+  border-radius:1rem;
+
+  transition: all .25s ease-in-out 0s;
+}
+
+.btn:hover{
+  cursor:pointer;
+}
+
+.btnBlueDark{
+  background-color: var(--colorLetterDark);
+  color:white;
+  border:2px solid var(--colorLetterDark);
+}
+
+.btnBuy{
+  background-color:var(--colorYellow1);
+  border:2px solid var(--colorYellow1);
+}
+
+.btnBuy:hover{
+  color:white;
+  background-color:transparent;
+  transform: scale(1.1);
+}
+
+.btnConfirmar{
+  color:white;
+  margin:0 1rem;
+  background-color: var(--colorSubmit);
+  border:2px solid var(--colorSubmit);
+}
+
+.btnConfirmar:hover{
+  color:var(--colorSubmit);
+  background-color: transparent;
+}
+
+.btnBorrar{
+  color:white;
+  margin:0 1rem;
+  background-color: var(--colorErase);
+  border:2px solid var(--colorErase);
+}
+
+.btnBorrar:hover{
+  color: var(--colorErase);
+  background-color: transparent;
+}
+
+.titlesSection{
+  flex:1 0 100%;
+
+  padding:2rem 0;
+  
+  font-size:5rem;
+  text-align: center;
+  letter-spacing: .5rem;
+  color:var(--colorTitles);
+  text-shadow: 2px 2px 5px black;
+  text-transform: uppercase;
+}
+
+@media(max-width:1280px){
+  :root{
+    font-size:.6rem;
+  }
+
+  .destacados .card{
+    flex:0 0 450px;
+  }
+}
+
+@media(max-width:960px){
+  /*HOME COMPONENT*/
+  .favorite .sloganContainer{
+    padding:0;
+  }
+
+  /*FormPedidosComponent*/
+  .inputRatioCheck label{
+    flex:1 1 45%;
+  }
+}
+
+@media(max-width:720px){
+
+}
