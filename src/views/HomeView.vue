@@ -15,6 +15,14 @@ export default {
     HomeComponent,
     DestacadosComponent,
     NosotrosComponent
+  },
+  created(){
+    this.changeUser();
+  },
+  methods:{
+    changeUser(){
+      this.$store.dispatch("changeUser",false);
+    }
   }
 }
 </script>

@@ -1,11 +1,17 @@
 <template>
   <header>
-    <nav>
+    <nav v-if="$store.getters.getUser">
       <router-link to="/" class="buttonNav">HOME</router-link>
       <router-link to="/pedido" class="buttonNav">HAZ TU PEDIDO</router-link>
       <router-link to="/sabores" class="buttonNav">NUESTROS SABORES</router-link>
       <router-link to="/login" class="buttonNav">REGISTRATE</router-link>
       <router-link to="/admin" class="buttonNav">ADMIN</router-link> 
+      
+    </nav>
+    <nav v-else>
+      <router-link to="/" class="buttonNav">HOME</router-link>
+      <router-link to="/admin" class="buttonNav">ADMIN LOGIN</router-link>
+      <router-link to="/admin_orders" class="buttonNav">PEDIDOS</router-link>       <router-link to="/inventario" class="buttonNav">INVENTARIO</router-link> 
     </nav>
   </header>
   <main>
@@ -55,18 +61,18 @@ header{
 }
 
 nav{
-  /* border:2px solid black; */
-  width:60%;
+  border:2px solid black;
+  width:70%;
   display:flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .buttonNav{
   flex:0 1 auto;
 
-  padding:.5rem 2rem;
+  padding:.5rem 3rem;
   font-size:1.6rem;
-  /* border:2px solid black; */
+  border:2px solid black;
 
   background-color:var(--colorYellow1);
   border-radius:1rem;
@@ -86,7 +92,6 @@ nav{
 
 main{
   min-height:100vh;
- /*  border:2px solid black; */
 }
 
 footer{

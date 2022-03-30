@@ -1,13 +1,13 @@
 <template>
-  <PedidosComponent/>
+  <LoginAdminComponent/>
 </template>
 
 <script>
-import PedidosComponent from "../components/PedidosComponent.vue";
+import LoginAdminComponent from "../components/LoginAdminComponent.vue";
 export default {
-  name: "AdminPedidosView",
+  name: "AdminLoginView",
   components:{
-    PedidosComponent
+    LoginAdminComponent
   },
   created(){
     this.changeUser();

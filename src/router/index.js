@@ -3,7 +3,9 @@ import HomeView from '../views/HomeView.vue';
 import PedidosView from "../views/PedidosView.vue";
 import SaboresView from "../views/SaboresView.vue";
 import LoginView from "../views/LoginView.vue";
-import AdminView from "../views/AdminPedidosView.vue";
+import AdminLoginView from "../views/AdminLoginView.vue";
+import AdminPedidoView from "../views/AdminPedidosView.vue";
+import InventarioView from "../views/InventarioView.vue";
 
 const routes = [
   {
@@ -29,7 +31,17 @@ const routes = [
   {
     path: "/admin",
     name: "Admin",
-    component: AdminView
+    component: AdminLoginView
+  },
+  {
+    path:"/admin_orders",
+    name: "Admin Orders",
+    component: AdminPedidoView
+  },
+  {
+    path:"/inventario",
+    name:"Inventario",
+    component: InventarioView
   }
 ]
 

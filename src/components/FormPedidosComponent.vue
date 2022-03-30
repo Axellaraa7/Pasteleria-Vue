@@ -114,6 +114,5 @@
   }
 </script>
 
-<style scoped>
-@import '../CSS/pedidos.css';
-</style>
+<!--EJEMPLO DE UN ARCHIVO CSS EXTERNO SCOPED-->
+<style scoped src="../CSS/pedidos.css"></style>
